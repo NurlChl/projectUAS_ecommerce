@@ -17,11 +17,11 @@ section {
 section div {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-between;
     margin: 2rem 0;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 section div#bungkusTabel {

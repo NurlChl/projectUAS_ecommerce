@@ -49,7 +49,7 @@ if (isset($_POST["cari"])) {
                 <h1>Setting Produk</h1>
             </ul>
             <ul>
-                    <input type="search" name="search" placeholder="Cari..." autofocus autocomplete="off" id="search">
+                    <input type="search" name="search" placeholder="Cari..." autocomplete="off" id="search">
                     <button type="submit" name="cari" id="button-cari" >Cari</button>
             </ul>
         </div>
@@ -68,10 +68,8 @@ if (isset($_POST["cari"])) {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if(empty($dataWp)) : ?>
-                        <tr>
-                            <td colspan="6" style="padding: 5rem; font-size: 1.2rem; background-color: rgb(246, 246, 246);">Tidak ada produk, silahkan tambah produk.</td>
-                        </tr>
+                    <?php if(!empty($dataWp)) : ?>
+                        
                     <?php else : ?>
                     <?php foreach ($produk as $produk) : ?>
                     <tr>

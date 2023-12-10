@@ -188,3 +188,153 @@
     font-weight: 500;
     margin-top: 5rem;
 }
+
+
+
+
+
+
+
+
+/* responsive hp */
+
+
+@media (max-width: 400px) {
+    
+
+    .bungkusCart {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .bungkusCart section.cart {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin:  2rem 1rem;
+    }
+    
+    .bungkusCart section.cart h2 {
+        font-size: 1rem;
+    }
+    
+    .bungkusCart section.cart .katalog {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(5rem, 1fr));
+        gap: 1rem;
+    }
+    
+    .bungkusCart section.cart .katalog .produk {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        overflow: hidden;
+        gap: 1rem;
+        padding: .5rem;
+        width: 100%;
+    }
+    
+    .bungkusCart section.cart .katalog .produk img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: .2rem;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul {
+        gap: .5rem;
+    }
+    
+    
+    .bungkusCart section.cart .katalog .produk div ul li {
+        gap: .2rem;
+        justify-content: space-between;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul .judul {
+        gap: .5rem;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul .judul h3 {
+        font-size: .8rem;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul .judul p {
+        font-weight: 400;
+        font-size: .4rem;
+        color: grey;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul li h2 {
+        font-size: .8rem;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul.hitung li span {
+        cursor: pointer;
+        font-size: .6rem;
+    }
+    
+    .bungkusCart section.cart .katalog .produk div ul.hitung li span.kurang,
+    .bungkusCart section.cart .katalog .produk div ul.hitung li span.tambah {
+        cursor: pointer;
+    }
+    
+    .bungkusCart section.cekot {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        gap: .5rem;
+    }
+    
+    .bungkusCart section.cekot h2 {
+        font-size: 1rem;
+    }
+    
+    .bungkusCart section.cekot .bungkuscek {
+        gap: .5rem;
+        padding: 1rem;
+        background-color: rgb(248, 248, 248);
+        border-radius: .5rem;
+    }
+    
+    .bungkusCart section.cekot .bungkuscek .keterangan {
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .bungkusCart section.cekot .bungkuscek .keterangan ul {
+        font-size: .7rem;
+        gap: 1rem;
+    }
+    
+    .bungkusCart section.cekot .bungkuscek .keterangan ul li {
+        font-weight: 500;
+        font-family: 'nunito';
+    }
+    
+    
+    .bungkusCart section.cekot .bungkuscek .keterangan ul span {
+        font-weight: 800;
+        font-family: 'nunito';
+    }
+    
+    
+    .bungkusCart section.cekot .bungkuscek .total ul {
+        gap: 1rem;
+    }
+    
+    .bungkusCart section.cekot .bungkuscek .total ul li {
+        font-size: 1rem;
+    }
+    
+    .bungkusCart section.cekot .bungkuscek button {
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 100rem;
+        background-color: greenyellow;
+        font-weight: 500;
+        margin-top: 3rem;
+        font-size: .7rem;
+    }
+
+}
+

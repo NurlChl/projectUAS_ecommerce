@@ -161,3 +161,162 @@ form div p span {
 
 
 
+
+
+
+
+/* responsive tablet */
+
+@media (max-width: 1030px) {
+    
+    form div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: white;
+        width: 70%;
+        border-radius: 1rem;
+        padding: 2rem 5rem;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+
+/* responsive hp */
+
+@media (max-width: 400px) {
+    
+
+    form {
+        margin: 1rem;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+    
+    form div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: white;
+        width: 90%;
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    form div h2 {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    form div ul {
+        gap: .5rem;
+    }
+    
+    form div ul h1 {
+        font-weight: 600;
+        font-size: .9rem;
+    }
+    
+    form div ul p {
+        font-size: .9rem;
+        color: gray;
+        font-size: .5rem;
+    }
+    
+    form div .desc {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form div ul label {
+        font-weight: 500;
+        font-size: .5rem;
+    }
+    
+    form div ul input {
+        outline: none;
+        border: none;
+        font-size: .5rem;
+    }
+    
+    form div ul input[type=text], form div ul input[type=number] {
+        background-color: rgb(246, 246, 246);
+        padding: .5rem 1rem;
+        border-radius: 100rem;
+    }
+    
+    form div ul textarea {
+        border: none;
+        border-radius: .5rem;
+        background-color: rgb(246, 246, 246);
+        padding: .5rem;
+        font-size: .5rem;
+    }
+    
+    form div ul select {
+        padding: .5rem;
+        border-radius: .2rem;
+        outline: none;
+        font-size: .5rem;
+    }
+    
+    form div ul select option {
+        padding: .3rem;
+    }
+    
+    form div ul input[type=file]::file-selector-button {
+        font-weight: 500;
+        border: none;
+        padding: .5rem;
+        background-color: orange;
+        border-radius: .3rem;
+        font-size: .4rem;
+        cursor: pointer;
+    }
+    
+    form div ul input[type=color] {
+        border-radius: .5rem;
+        width: 5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    form div ul input[type=color]::-webkit-color-swatch-wrapper {
+        padding: 0;
+        
+    }
+    form div ul input[type=color]::-webkit-color-swatch {
+        border-radius: .5rem;
+        border: none;
+    }
+    
+    form div button {
+        width: 100%;
+        padding: .5rem 1rem;
+        border-radius: 100rem;
+        border: none;
+        background-color: greenyellow;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: .5rem;
+    }
+    
+    form div p {
+        font-size: .5rem;
+    }
+    
+    form div p span {
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    
+    
+
+}

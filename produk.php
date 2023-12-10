@@ -23,16 +23,6 @@ $kategoriKlik = query("SELECT
                 WHERE nama_kategori = '$kategori'
                 ");
 
-// $kategoriKursi = query("SELECT
-//                 c.nama
-//                 ");
-
-
-
-// foreach ($produk as $produk) {
-//     $id_produk = $produk['id_produk'];
-//     $warna_produk = query("SELECT nama_warna FROM warna WHERE id_produk = $id_produk ");
-// }
 
 
 ?>

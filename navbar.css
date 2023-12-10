@@ -58,3 +58,80 @@ nav ul .btn-login {
 nav ul a li.active {
     color: black;
 }
+
+
+
+
+
+
+/* responsive hp */
+
+
+@media (max-width: 400px) {
+    
+    nav {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        flex-direction: column;
+        padding: .2rem;
+        background-color: white;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    nav ul h2 {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    nav ul.navig {
+        flex-wrap: wrap;
+    }
+    
+    nav ul li {
+        cursor: pointer;
+        font-size: .6rem;
+        font-weight: 400;
+        color: rgb(161, 161, 161);
+    }
+    nav ul li:hover {
+        color: black;
+    }
+    nav ul li:active {
+        color: black;
+    }
+    nav ul li:visited {
+        color: black;
+    }
+    nav ul li:link {
+        color: black;
+    }
+    
+    nav ul li.material-symbols-rounded {
+        font-size: .9rem;
+    }
+
+    nav ul .btn-login {
+        text-decoration: underline;
+        font-size: .7rem;
+        color: orange;
+        padding: 0 1rem;
+        border-left: 2px solid rgb(161, 161, 161);
+    }
+    
+    nav ul a li.active {
+        color: black;
+    }
+    
+    
+    
+
+
+}
