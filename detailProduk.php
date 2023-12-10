@@ -116,8 +116,8 @@ if (isset($_POST["btnKeranjang"])) {
                 <?php if ($pengguna !== $produk['pembuat']) : ?>
                     <input type="hidden" name="id_produk" value="<?= $id_produk ?>">
                     <input type="hidden" name="pengguna" value="<?= $pengguna ?>">
-                    <textarea name="komen" id="komen" placeholder="Enter your review"></textarea>
-                    <button type="submit" name="btnKomen">Kirim</button>
+                    <textarea name="komen" id="komen" placeholder="Berikan penilaian"></textarea>
+                    <button type="submit" name="btnKomen">Kirim Komen</button>
                 <?php endif; ?>
             </form>
             <div>
@@ -160,15 +160,15 @@ if (isset($_POST["btnKeranjang"])) {
                     <?php endforeach ?>
                     </li>
                     <li>
-                        <h2>Rp. <?= $produk['harga'] ?></h2>
+                        <h2>Rp <?= number_format($produk['harga'], 0, ',', '.') ?></h2>
                     </li>
                 </ul>
                 <ul class="btn">
                     <form action="" method="post">
                         <input type="hidden" name="add_keranjang" value="<?= $produk['id_produk'] ?>"/>
-                        <button type="submit" class="btn-cart" name="btnKeranjang">Add To Cart</button>
+                        <button type="submit" class="btn-cart" name="btnKeranjang">Keranjang</button>
                     </form>
-                        <button class="btn-buy">Buy Now</button>
+                        <button class="btn-buy">Kuy Beli</button>
                 </ul>
             </div>
         </div>
@@ -183,7 +183,7 @@ if (isset($_POST["btnKeranjang"])) {
                 <ul>
                     <li>
                         <h4><?= $rekomendasi['nama_produk'] ?></h4>
-                        <h3><?= $rekomendasi['harga'] ?></h3>
+                        <h3><?= number_format($rekomendasi['harga'], 0, ',', '.') ?></h3>
                     </li>
                     <li>
                         <p class="desc">New in Rchester</p>

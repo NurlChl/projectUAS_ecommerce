@@ -19,7 +19,7 @@ section div {
     flex-direction: row;
     gap: 1rem;
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 1rem 0;
     align-items: center;
     padding: 2rem 0;
 }

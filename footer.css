@@ -16,7 +16,8 @@ footer {
 footer div{
     display: flex;
     flex-direction: row;
-    gap: 10rem;
+    flex-wrap: wrap;
+    gap: 1rem 5rem;
     padding: 1rem 2rem;
     color: white;
 }
@@ -41,4 +42,53 @@ footer div ul li {
     font-size: .8rem;
     color: rgb(197, 197, 197);
     cursor: pointer;
+}
+
+
+
+
+/* responsive hp */
+
+@media (max-width: 400px) {
+    
+    footer {
+        margin: 1rem 1rem;
+        border-radius: .5rem;
+    }
+    
+    footer div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+        color: white;
+    }
+    
+    footer div ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div ul h2 {
+        font-size: .8rem;
+    }
+    
+    footer div ul p {
+        font-weight: 400;
+        font-size: .5rem;
+    }
+    
+    footer div ul .judul {
+        font-weight: 600;
+        color: white;
+    }
+    
+    footer div ul li {
+        font-weight: 400;
+        font-size: .5rem;
+        color: rgb(197, 197, 197);
+        cursor: pointer;
+    }
+
 }

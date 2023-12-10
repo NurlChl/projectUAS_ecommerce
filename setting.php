@@ -49,13 +49,13 @@ if (isset($_POST["cari"])) {
                 <h1>Setting Produk</h1>
             </ul>
             <ul>
-                    <input type="search" name="search" placeholder="Cari..." autocomplete="off" id="search">
+                    <input type="search" name="search" placeholder="Cari..." autofocus autocomplete="off" id="search">
                     <button type="submit" name="cari" id="button-cari" >Cari</button>
             </ul>
         </div>
     
         <div id="bungkusTabel" style="display: flex; flex-direction: column; gap: 0;">
-            <p style="color: white; font-size: .8rem; background-color: rgba(255, 184, 53, 0.808); padding: .5rem 2rem; width: 100%;">Hanya bisa melakukan aksi produk yang dibuat sendiri!</p>
+            <p style="color: white; font-size: .8rem; background-color: rgba(255, 184, 53, 0.808); padding: .5rem 2rem; width: 100%;">Hanya bisa melakukan aksi pada produk yang dibuat sendiri!</p>
             <table id="konten">
                 <thead>
                     <tr>
@@ -75,7 +75,7 @@ if (isset($_POST["cari"])) {
                     <tr>
                         <td><?= $produk['nama_produk'] ?></td>
                         <td><?= $produk['stok'] ?></td>
-                        <td>Rp. <?= $produk['harga'] ?></td>
+                        <td>Rp <?= number_format($produk['harga'], 0, ',', '.') ?></td>
                         <td>
                             <img src="./gambar/<?= $produk['gambar'] ?>">
                         </td>
@@ -102,5 +102,8 @@ if (isset($_POST["cari"])) {
             </table>
         </div>
     </section>
+
+
+    <?php include_once 'footer.php'; ?>
 </body>
 </html>

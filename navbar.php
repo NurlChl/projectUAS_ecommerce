@@ -21,7 +21,7 @@ require_once "font.php";
             <a  href="index.php">
                 <li <?php if (strpos($_SERVER['PHP_SELF'], 'index.php')) echo 'class=active'; ?> >Home</li>
             </a>
-            <li>About</li>
+            <!-- <li>About</li> -->
             <a href="produk.php">
                 <li <?php if (strpos($_SERVER['PHP_SELF'], 'produk.php')) echo 'class=active'; ?>>Product</li>
             </a>
