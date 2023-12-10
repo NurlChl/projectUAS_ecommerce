@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: center;
+    padding: 2rem;
+}
+
+section div#bungkusTabel {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+section div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section div ul input {
+    padding: .5rem 1rem;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 100rem;
+}
+
+section div ul button {
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 100rem;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border-bottom-width: 1px;
+    border-bottom-style: ridge;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+th {
+    background-color: rgb(235, 235, 235);
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 1.5rem .5rem;
+    border-right-style: ridge;
+    border-right-width: 1px;
+}
+
+td {
+    font-size: .9rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+td div {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    width: fit-content;
+}
+
+td div button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 100rem;
+    font-size: .8rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+td div button.btnEdit {
+    background-color: yellow;
+    color: black;
+}
+
+td div button.btnHapus {
+    background-color: red;
+    color: white;
+
+}
+
+tbody tr:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+tbody tr td img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+tbody tr td div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+tbody tr td div button {
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+tbody tr td div button.edit {
+    background-color: yellow;
+}
+
+tbody tr td div button.hapus {
+    background-color: red;
+    color: white;
+}

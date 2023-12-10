@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.bungkusCart {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.bungkusCart section.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.bungkusCart section.cart h2 {
+    font-family: 'nunito';
+    font-weight: 800;
+}
+
+.bungkusCart section.cart .katalog {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+}
+
+.bungkusCart section.cart .katalog .produk {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    overflow: hidden;
+    gap: 2rem;
+    border-radius: .5rem;
+    background-color: rgb(248, 248, 248);
+    padding: 1rem;
+}
+
+.bungkusCart section.cart .katalog .produk img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.bungkusCart section.cart .katalog .produk div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bungkusCart section.cart .katalog .produk div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.bungkusCart section.cart .katalog .produk div ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bungkusCart section.cart .katalog .produk div ul .judul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+}
+
+.bungkusCart section.cart .katalog .produk div ul .judul h3 {
+    font-family: 'nunito';
+    font-weight: 800;
+}
+
+.bungkusCart section.cart .katalog .produk div ul .judul p {
+    font-weight: 400;
+    font-size: .8rem;
+    color: grey;
+}
+
+.bungkusCart section.cart .katalog .produk div ul li h2 {
+    font-family: 'nunito';
+    font-weight: 700;
+}
+
+.bungkusCart section.cart .katalog .produk div ul.hitung li span {
+    cursor: pointer;
+}
+
+.bungkusCart section.cart .katalog .produk div ul.hitung li .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.bungkusCart section.cart .katalog .produk div ul.hitung li span.kurang,
+.bungkusCart section.cart .katalog .produk div ul.hitung li span.tambah {
+    cursor: pointer;
+}
+
+.bungkusCart section.cekot {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.bungkusCart section.cekot h2 {
+    font-family: 'nunito';
+    font-weight: 800;
+}
+
+.bungkusCart section.cekot .bungkuscek {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgb(248, 248, 248);
+    border-radius: .5rem;
+}
+
+.bungkusCart section.cekot .bungkuscek .keterangan {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+}
+
+.bungkusCart section.cekot .bungkuscek .keterangan ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .9rem;
+    gap: 1rem;
+}
+
+.bungkusCart section.cekot .bungkuscek .keterangan ul li {
+    font-weight: 500;
+    font-family: 'nunito';
+
+}
+
+
+.bungkusCart section.cekot .bungkuscek .keterangan ul span {
+    font-weight: 800;
+    font-family: 'nunito';
+}
+.bungkusCart section.cekot .bungkuscek .keterangan ul span::after {
+    content: ',00';
+}
+
+.bungkusCart section.cekot .bungkuscek .total ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.bungkusCart section.cekot .bungkuscek .total ul li {
+    font-weight: 800;
+    font-size: 1.2rem;
+    font-family: 'nunito';
+}
+.bungkusCart section.cekot .bungkuscek .total ul li.nilai-total::after {
+    content: ',00';
+}
+
+.bungkusCart section.cekot .bungkuscek button {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 100rem;
+    background-color: greenyellow;
+    font-weight: 500;
+    margin-top: 5rem;
+}

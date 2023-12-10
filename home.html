@@ -1,0 +1,154 @@
+<?php
+
+require_once "navbar.php";
+require_once "font.php";
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.favorit').click(function(){
+                $('.material-symbols-rounded').toggleClass("like")
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Accent Furniture Collections</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reprehenderit non veritatis, quam fugiat dolor ex eligendi praesentium natus minus?</p>
+    </header>
+
+    <section>
+        <div class="pilihan">
+            <ul class="kateg">
+                <li>All</li>
+                <li>Armchairs</li>
+                <li>Dining Tables</li>
+                <li>Modular  Sofas</li>
+                <li>Ottomans</li>
+                <li>Chest of Drawers</li>
+            </ul>
+            <ul>
+                <li class="material-symbols-rounded filter">page_info</li>
+            </ul>
+        </div>
+        
+        <div class="katalog">
+            
+            <div class="produk">
+                <img src="./gambar/asset1.png"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/asset2.png"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/657124f8cac5a.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <p class="material-symbols-rounded favorit">favorite</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <?php include_once "footer.php"; ?>
+</body>
+</html>

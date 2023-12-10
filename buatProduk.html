@@ -1,0 +1,85 @@
+<?php
+
+require_once "font.php";
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Produk</title>
+    <link rel="stylesheet" href="buat_produk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <h2>FURNITURE</h2>
+            <ul class="desc">
+                <h1>Hai, World!</h1>
+                <p>Silahkan buat produk anda!</p>
+            </ul>
+            <ul>
+                <label for="nama_produk">Nama Produk</label>
+                <input type="text" id="nama_produk" name="nama_produk" placeholder="Enter your name product"/>
+            </ul>
+            <ul>
+                <label for="stock">Stock</label>
+                <input type="number" id="stock" name="stock" placeholder="Enter your stock">
+            </ul>
+            <ul>
+                <label for="harga">Stock</label>
+                <input type="number" id="harga" name="harga" placeholder="Enter your price">
+            </ul>
+            <ul>
+                <label for="deskripsi">Deskripsi</label>
+                <textarea name="deskripsi" id="deskripsi" placeholder="Enter your description"></textarea>
+            </ul>
+            <ul>
+                <label for="kategori"></label>
+                <select name="kategori" id="kategori">
+                    <option selected hidden disabled>Pilih Kategori</option>
+                    <option value="kursi">Kursi</option>
+                    <option value="kursi">Kursi</option>
+                    <option value="kursi">Kursi</option>
+                </select>
+            </ul>
+            <ul>
+                <label for="gambar">Gambar</label>
+                <input type="file" id="gambar" name="gambar" accept="image/*"/>
+            </ul>
+            <ul id="bungkus-warna">
+                <label for="warna">Warna</label>
+                <input type="color" name="warna[]" id="warna" class="warna-input">
+            </ul>
+            <ul>
+                <button type="button" class="btn-warna" onclick="tambahWarna()">Tambah Warna</button>
+            </ul>
+            <button type="button" onclick="kirim()">Buat Produk</button>
+        </div>
+    </form>
+
+    <?php include_once 'footer.php'; ?>
+
+    <script>
+        function kirim () {
+            document.location.href = './'
+        }
+
+        function tambahWarna () {
+            var warnaKonten = document.getElementById('bungkus-warna')
+            var inputWarna = document.createElement('input')
+            inputWarna.type = 'color'
+            inputWarna.name = 'warna[]'
+            inputWarna.classList.add('warna-input')
+            warnaKonten.appendChild(inputWarna)
+        }
+    </script>
+</body>
+</html>

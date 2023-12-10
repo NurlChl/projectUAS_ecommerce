@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.detail {
+    margin: 2rem;
+}
+
+.detail .bungkus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.detail .bungkus form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail .bungkus form img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.detail .bungkus form textarea {
+    resize: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    height: 7rem;
+    outline: none;
+}
+
+.detail .bungkus form button {
+    padding: 1rem 2rem;
+    border-radius: 100rem;
+    background-color: greenyellow;
+    border: none;
+    font-weight: 500;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.detail .bungkus div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.detail .bungkus div ul.judul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.detail .bungkus div ul.judul p {
+    font-size: 1vw;
+    color: grey;
+    font-weight: 400;
+}
+
+.detail .bungkus div ul.judul h1 {
+    font-family: 'nunito';
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+
+.detail .bungkus div ul.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.detail .bungkus div ul.desc div.navig ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .3rem;
+    background-color: rgb(238, 238, 238);
+    padding: .3rem;
+    border-radius: 1rem;
+}
+
+.detail .bungkus div ul.desc .navig ul li {
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: grey;
+}
+.detail .bungkus div ul.desc .navig ul li:hover {
+    background-color: white;
+    color: black;
+}
+
+.detail .bungkus div ul.desc div.navig ul li.diklik {
+    color: black;
+    background-color: white;
+}
+
+.detail .bungkus div ul.desc .scroll {
+    padding: .5rem;
+    max-height: 10rem;
+    overflow-y: auto;
+    direction: ltr;
+    scrollbar-color: greenyellow rgb(239, 239, 239);
+    scrollbar-width: .5rem;
+}
+
+.detail .bungkus div ul.desc .scroll::-webkit-scrollbar {
+    width: .5rem;
+}
+.detail .bungkus div ul.desc .scroll::-webkit-scrollbar-track {
+    background-color: rgb(239, 239, 239);
+    border-radius: 100rem;
+}
+.detail .bungkus div ul.desc .scroll::-webkit-scrollbar-thumb {
+    border-radius: 100rem;
+    border: 5px solid transparent;
+    background-color: greenyellow;
+}
+
+.detail .bungkus div ul.desc .deskripsi {
+    font-size: .9rem;
+    color: black;
+    background-color: white;
+    min-height: 9rem;
+}
+
+.detail .bungkus div ul.desc .spesifikasi {
+    font-size: .9rem;
+    min-height: 9rem;
+}
+
+.detail .bungkus div ul.desc .review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    min-height: 9rem;
+}
+
+.detail .bungkus div ul.desc .review ul {
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: rgb(255, 239, 209);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.detail .bungkus div ul.desc .review ul li {
+    font-weight: 600;
+}
+.detail .bungkus div ul.desc .review ul li::after {
+    content: " :";
+}
+
+.detail .bungkus div ul.desc .review ul p {
+    font-size: .9rem;
+}
+
+.detail .bungkus div ul.warna {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail .bungkus div ul.warna li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.detail .bungkus div ul.warna li span {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.detail .bungkus div ul.warna li span:hover {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+.detail .bungkus div ul.warna li h2 {
+    font-family: 'nunito';
+    font-weight: 700;
+}
+
+.detail .bungkus div ul.btn {
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+.detail .bungkus div ul.btn form {
+    width: 100%;
+}
+
+.detail .bungkus div ul.btn form button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 100rem;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.detail .bungkus div ul.btn button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 100rem;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.detail .bungkus div ul.btn button.btn-cart {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.detail .bungkus div ul.btn button.btn-buy {
+    background-color: greenyellow;
+}
+
+.rekomendasi {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.rekomendasi .katalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+
+.rekomendasi .katalog .produk {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 25rem;
+    border-radius: 1rem;
+    background-color: rgb(243, 243, 243);
+}
+
+.rekomendasi .katalog .produk img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.rekomendasi .katalog .produk ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .3rem;
+}
+
+.rekomendasi .katalog .produk ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rekomendasi .katalog .produk ul li h4,.rekomendasi .katalog .produk ul li h3 {
+    font-family: 'nunito';
+    font-weight: 700;
+}
+
+.rekomendasi .katalog .produk ul li h4 {
+    font-size: 1.2rem;
+}
+
+.rekomendasi .katalog .produk ul li h3 {
+    font-size: 1.3rem;
+}
+
+.rekomendasi .katalog .produk ul li p.desc {
+    color: grey;
+    font-size: .9rem;
+}
+
+.rekomendasi .katalog .produk ul li span {
+    display: flex;
+    flex-direction: row;
+}
+
+.rekomendasi .katalog .produk ul li span p {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+}
+
+.rekomendasi .katalog .produk ul li span p.war1 {
+    transform: translateX(13px);
+    background-color: black;
+    z-index: 3;
+}
+.rekomendasi .katalog .produk ul li span p.war2 {
+    transform: translateX(7px);
+    background-color: black;
+    z-index: 2;
+}
+.rekomendasi .katalog .produk ul li span p.war3 {
+    z-index: 1;
+    background-color: black;
+}

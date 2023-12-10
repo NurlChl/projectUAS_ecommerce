@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="detail_produk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.spesifikasi').hide();
+            $('.review').hide();
+            $('.deskripsi').show();
+            $('#deskrip').addClass('diklik');
+            $('#spesif').removeClass('diklik');
+            $('#ripiu').removeClass('diklik');
+            
+            $('.navig ul #deskrip').click(function() {
+                $('.deskripsi').show();
+                $('.spesifikasi').hide();
+                $('.review').hide();
+                $('#deskrip').addClass('diklik');
+                $('#spesif').removeClass('diklik');
+                $('#ripiu').removeClass('diklik');
+            })
+
+            $('.navig ul #spesif').click(function() {
+                $('.spesifikasi').show();
+                $('.deskripsi').hide();
+                $('.review').hide();
+                $('#spesif').addClass('diklik');
+                $('#deskrip').removeClass('diklik');
+                $('#ripiu').removeClass('diklik');
+            })
+
+            $('.navig ul #ripiu').click(function() {
+                $('.review').show();
+                $('.spesifikasi').hide();
+                $('.deskripsi').hide();
+                $('#ripiu').addClass('diklik');
+                $('#spesif').removeClass('diklik');
+                $('#deskrip').removeClass('diklik');
+            })
+        })
+    </script>
+</head>
+<body>
+    <section class="detail">
+        <div class="bungkus">
+            <form action="" method="post">
+                <img src="./gambar/produk.jpg"/>
+                <textarea name="komen" id="komen"></textarea>
+                <button>Kirim</button>
+            </form>
+            <div>
+                <ul class="judul">
+                    <p>Sofa & Sectional Collection</p>
+                    <h1>Chiltern Tufted Arm Chair</h1>
+                    <p>New in Rechester</p>
+                </ul>
+                <ul class="desc">
+                    <div class="navig">
+                        <ul>
+                            <li id="deskrip">Description</li>
+                            <li id="spesif">Specification</li>
+                            <li id="ripiu">Reviews</li>
+                        </ul>
+                    </div>
+                    <section class="scroll">
+                        <p class="deskripsi">Ini deskripsi amet consectetur adipisicing elit. Mollitia, deleniti. Aspernatur fuga laudantium blanditiis mollitia cumque quam consectetur facere iure accusamus a! Dolores quos nostrum delectus repudiandae amet suscipit tempora ratione dolorem nobis ducimus commodi iusto, libero provident voluptates magni, aliquam quod aspernatur in sit similique modi saepe quo! Aliquid!</p>
+                        <p class="spesifikasi">Ini spesifikasi let consectetur adipisicing elit. Pariatur, placeat. Molestiae eum nulla cumque, minima adipisci neque velit doloremque, repellendus voluptatum, quia assumenda pariatur voluptate iste? Officiis, eius qui ab tenetur necessitatibus minima ad soluta quam excepturi distinctio sint deleniti, laborum mollitia. Nisi cumque et facere! Mollitia maxime dolorum amet!</p>
+                        <div class="review">
+                            <ul>
+                                <li>Pengguna</li>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, vero!</p>
+                            </ul>
+                            <ul>
+                                <li>Pengguna</li>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, vero!</p>
+                            </ul>
+                            <ul>
+                                <li>Pengguna</li>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, vero!</p>
+                            </ul>
+                            <ul>
+                                <li>Pengguna</li>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, vero!</p>
+                            </ul>
+                        </div>
+                    </section>
+                </ul>
+                <ul class="warna">
+                    <li>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h2>$899.00</h2>
+                    </li>
+                </ul>
+                <ul class="btn">
+                    <button class="btn-cart">Add To Cart</button>
+                    <button class="btn-buy">Buy Now</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="rekomendasi">
+        <h1>Rekomendasi</h1>
+        <div class="katalog">
+            <div class="produk" onclick="document.location.href='detailProduk.php'">
+                <img src="./gambar/asset1.png"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/asset2.png"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="produk">
+                <img src="./gambar/produk.jpg"/>
+                <ul>
+                    <li>
+                        <h4>Camille Boucle</h4>
+                        <h3>$830</h3>
+                    </li>
+                    <li>
+                        <p class="desc">New in Rchester</p>
+                        <span>
+                            <p class="war1"></p>
+                            <p class="war2"></p>
+                            <p class="war3"></p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <?php include_once 'footer.php'; ?>
+</body>
+</html>

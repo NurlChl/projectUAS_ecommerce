@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+form {
+    background-image: url("./gambar/gambar_header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    width: 40%;
+    border-radius: 1rem;
+    padding: 2rem 5rem;
+    align-items: center;
+}
+
+form div h2 {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+}
+
+form div ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+form div ul h1 {
+    font-weight: 600;
+}
+
+form div ul p {
+    font-size: .9rem;
+    color: gray;
+}
+
+form div .desc {
+    justify-content: center;
+    align-items: center;
+}
+
+form div ul label {
+    font-weight: 500;
+}
+
+form div ul input[type=email], form div ul input[type=password], form div ul input[type=text] {
+    outline: none;
+    border: none;
+    background-color: rgb(246, 246, 246);
+    padding: .5rem 1rem;
+    border-radius: 100rem;
+}
+
+form div ul li {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+form div ul li label {
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+form div button {
+    width: 100%;
+    padding: .5rem 2rem;
+    border-radius: 100rem;
+    border: none;
+    background-color: greenyellow;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+form div p {
+    font-size: .9rem;
+}
+
+form div p span {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}

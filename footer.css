@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+footer {
+    margin: 3rem 2rem;
+    background-color: black;
+    border-radius: .5rem;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+footer div ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div ul p {
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+footer div ul .judul {
+    font-weight: 600;
+    color: white;
+}
+
+footer div ul li {
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgb(197, 197, 197);
+    cursor: pointer;
+}
