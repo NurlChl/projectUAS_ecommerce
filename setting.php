@@ -41,6 +41,21 @@ if (isset($_POST["cari"])) {
     <link rel="stylesheet" href="setting.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/setting.js"></script>
+
+    <script>
+        function checkWindowSize() {
+            var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (windowWidth < 800) {
+                alert("Hanya bisa di akses dengan layar diatas 800px");
+                
+                window.location.href = "index.php";
+            }
+        }
+
+        window.onload = checkWindowSize;
+        window.onresize = checkWindowSize;
+    </script>
 </head>
 <body>
     <section>
@@ -102,7 +117,6 @@ if (isset($_POST["cari"])) {
             </table>
         </div>
     </section>
-
 
     <?php include_once 'footer.php'; ?>
 </body>
