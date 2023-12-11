@@ -160,6 +160,9 @@
     font-weight: 800;
     font-family: 'nunito';
 }
+/* .bungkusCart section.cekot .bungkuscek .keterangan ul span::after {
+    content: ',00';
+} */
 
 .bungkusCart section.cekot .bungkuscek .total ul {
     display: flex;
@@ -173,9 +176,9 @@
     font-size: 1.2rem;
     font-family: 'nunito';
 }
-.bungkusCart section.cekot .bungkuscek .total ul li.nilai-total::after {
+/* .bungkusCart section.cekot .bungkuscek .total ul li.nilai-total::after {
     content: ',00';
-}
+} */
 
 .bungkusCart section.cekot .bungkuscek button {
     border: none;
