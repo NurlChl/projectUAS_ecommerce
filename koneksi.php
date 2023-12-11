@@ -242,14 +242,15 @@ function keranjang ($data) {
     global $conn;
 
     $id_produk = $data["add_keranjang"];
+    $pemilik = $data["user_keranjang"];
 
     // var_dump($id_produk);die;
 
-    $result = mysqli_query($conn, "SELECT * FROM keranjang WHERE id_produk = $id_produk");
+    $result = mysqli_query($conn, "SELECT * FROM keranjang WHERE id_produk = $id_produk AND pemilik = '$pemilik'");
 
     if (mysqli_num_rows($result) === 0) {
 
-        $query = "INSERT INTO keranjang (id_produk) VALUES ($id_produk)";
+        $query = "INSERT INTO keranjang (id_produk, pemilik) VALUES ($id_produk, '$pemilik')";
         mysqli_query($conn, $query);
     
         return mysqli_affected_rows($conn);

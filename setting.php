@@ -83,8 +83,10 @@ if (isset($_POST["cari"])) {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php if(!empty($dataWp)) : ?>
-                        
+                    <?php if(empty($produk)) : ?>
+                        <tr>
+                            <td colspan="6" style="padding: 5rem; font-size: 1.2rem; background-color: rgb(246, 246, 246);">Tidak ada produk, silahkan tambah produk.</td>
+                        </tr>
                     <?php else : ?>
                     <?php foreach ($produk as $produk) : ?>
                     <tr>

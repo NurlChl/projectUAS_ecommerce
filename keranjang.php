@@ -11,7 +11,9 @@ if (!isset($_SESSION["login"])) {
     exit;
 }
 
-$keranjang = query("SELECT * FROM keranjang");
+$pemilik = $_SESSION["username"];
+
+$keranjang = query("SELECT * FROM keranjang WHERE pemilik = '$pemilik'");
 
 $totalHarga = 0;
 
@@ -43,6 +45,9 @@ $totalHarga = 0;
             <h2>Your Cart</h2>
             
             <div class="katalog">
+                <?php if(empty($keranjang)) : ?>
+                    <div colspan="6" style="padding: 5rem; font-size: 1.2rem; background-color: rgb(246, 246, 246);">Keranjang Kosong.</div>
+                <?php else : ?>
                 <?php
                 foreach ($keranjang as $keranjang) {
                     $id_produk = $keranjang['id_produk'];
@@ -81,6 +86,7 @@ $totalHarga = 0;
                 </div>
                 <?php endforeach; ?>
                 <?php } ?>
+                <?php endif; ?>
             </div>
         </section>
     

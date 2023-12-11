@@ -171,6 +171,7 @@ if (isset($_POST["btnKeranjang"])) {
                 <ul class="btn">
                     <form action="" method="post">
                         <input type="hidden" name="add_keranjang" value="<?= $produk['id_produk'] ?>"/>
+                        <input type="hidden" name="user_keranjang" value="<?= $pengguna ?>"/>
                         <button type="submit" class="btn-cart" name="btnKeranjang">Keranjang</button>
                     </form>
                         <button class="btn-buy">Kuy Beli</button>
