@@ -44,8 +44,8 @@ if (isset($_POST['login'])) {
             $_SESSION["posisi"] = $row["posisi"];
 
             if (isset($_POST['ingat'])) {
-                setcookie('apasi', $row['id'], time()+120);
-                setcookie('key',hash('sha256',  $row['username']), time()+120);
+                setcookie('apasi', $row['id'], time()+86400);
+                setcookie('key',hash('sha256',  $row['username']), time()+86400);
             }
 
             header("Location: index.php");
