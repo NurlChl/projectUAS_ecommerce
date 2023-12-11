@@ -113,11 +113,11 @@ if (isset($_POST["submit"])) {
                 <!-- <input type="color" name="warnaBaru[]" class="warna-input"/>
                 <input type="hidden" name="warnaDihapus[]" value=""> -->
             </ul>
-            <ul class="btn-tamkur">
+            <!-- <ul class="btn-tamkur">
                 <button type="button" class="btn-warna" onclick="tambahWarna()">Tambah Warna</button>
                 <button type="button" class="btn-warna" onclick="kurangiWarna()">Kurangi Warna</button>
-            </ul>
-            <button type="submit" name="submit">Buat Produk</button>
+            </ul> -->
+            <button type="submit" name="submit">Edit Produk</button>
         </div>
     </form>
 

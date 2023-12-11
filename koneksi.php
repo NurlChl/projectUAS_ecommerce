@@ -127,7 +127,7 @@ function edit($data) {
     $deskripsi = htmlspecialchars($data["deskripsi"]);
     $spesifikasi = htmlspecialchars($data["spesifikasi"]);
     $nama_kategori = htmlspecialchars($data["kategori"]);
-    $nama_warna = $data["warna"];
+    // $nama_warna = $data["warna"];
     $id_warna = $data["id_warna"];
     $gambarLama = htmlspecialchars($data['gambarLama']);
 
@@ -166,42 +166,16 @@ function edit($data) {
             $query = "UPDATE warna SET nama_warna = '$warna' WHERE id_warna = $id_warna";
             mysqli_query($conn, $query);
 
-            // if (!$conn->query($query)) {
-            //     echo "Error updating record: " . $conn->error;
-            //     exit();
-            // }
-
         }
-    }
-
-    // if (isset($_POST["warnaDihapus"])) {
-    //     $warnaDihapus = $_POST["warnaDihapus"];
-
-    //     foreach ($warnaDihapus as $id_warna) {
-    //         $query = "DELETE FROM warna WHERE id_warna = $id_warna";
-    //         mysqli_query($conn, $query);
-
-    //         if (!$conn->query($query)) {
-    //             echo "Error deleting record: " . $conn->error;
-    //             exit();
-    //         }
-    //     }
-    // }
-
-
-    // if (isset($_POST["warnaBaru"])) {
-    //     $tambahWarnaBaru = $_POST["warnaBaru"];
-
-    //     foreach ($tambahWarnaBaru as $tambahWarna) {
-    //         $query= "INSERT INTO warna (id_produk, nama_warna) VALUES ($id_produk, '$tambahWarna')";
-    //         mysqli_query($conn, $query);
-
-    //         if (!$conn->query($query)) {
-    //             // echo "Error inserting new color: " . $conn->error;
-    //             exit();
-    //         }
-    //     }
-    // }
+        echo "
+            <script>
+                alert('data berhasil diubah')
+                document.location.href = './'
+            </script>
+        ";
+    } else {
+        echo mysqli_error($conn);
+     }
 
     return mysqli_affected_rows($conn);
 }
