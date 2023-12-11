@@ -166,7 +166,7 @@ section .katalog .produk ul li .like {
 /* responsive hp */
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     header {
         padding: 2vw 10vw;
         gap: .5rem;

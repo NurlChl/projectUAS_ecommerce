@@ -67,7 +67,7 @@ nav ul a li.active {
 /* responsive hp */
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     
     nav {
         width: 100%;
