@@ -62,7 +62,7 @@ $totalHarga = 0;
                         <ul>
                             <li class="judul">
                                 <h3><?= $allProduk['nama_produk'] ?></h3>
-                                <p>New in Rechoster <?= $keranjang['id_keranjang'] ?></p>
+                                <p>New in Rechoster</p>
                             </li>
                             <li>
                                 <h2>Rp. <?= number_format($allProduk['harga'], 0, ',', '.') ?></h2>
