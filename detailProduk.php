@@ -37,10 +37,11 @@ $rekomendasi = query("SELECT
 
 if (isset($_POST["btnKomen"])) {
     if ( komentar($_POST) > 0 ) {
-        header("Location: detailProduk.php?id_produk=$id_produk");
+        // header("Location: detailProduk.php?id_produk=$id_produk");
         echo"
             <script>
                 alert('Komentar berhasil dikirim')
+                document.location.href = 'detailProduk.php?id_produk=$id_produk';
             </script>
         ";
     } else {
