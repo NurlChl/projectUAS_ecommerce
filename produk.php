@@ -13,6 +13,7 @@ $produk = query("SELECT
                 c.nama_kategori 
                 FROM produk a 
                 LEFT JOIN kategori c ON a.id_produk = c.id_produk
+                ORDER BY a.id_produk DESC
                 ");
 
 $kategoriKlik = query("SELECT 

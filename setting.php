@@ -19,7 +19,7 @@ $produk = query("SELECT
                 c.nama_kategori 
                 FROM produk a 
                 LEFT JOIN kategori c ON a.id_produk = c.id_produk
-                ORDER BY id_produk ASC
+                ORDER BY id_produk DESC
                 ");
 
 
